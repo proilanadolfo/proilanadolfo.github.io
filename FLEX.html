@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL OUTPUT</title>
+</head>
+<style>
+       /* Background styles */
+    body {
+            background-image: url(img/123.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed ;
+            background-position: center;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        
+            /* Styles for the navigation bar */
+        .navbar {
+            
+            overflow: hidden;
+            justify-content: space-between;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+         /* Styles for the navigation bar list items and links */
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 17px;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 250px;
+            font-size: 30px;
+           
+        }
+ /* Styles for hover effect on navigation links */
+        .navbar a:hover {
+            background-color: #3db8ff;
+            color: black;
+            border-radius: 500px;
+            align-items: center;
+        }
+         /* Styles for different sections with images and text */
+    /* Each section has its own class for styling */
+
+        .ing p{
+            font-family: cursive;
+            text-align: center;
+            margin-top: 7%;
+            color: rgb(222, 15, 184);
+            font-size: 90px;
+        }
+        @keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+.ing p{
+  animation: lights 5s 750ms linear infinite;
+}
+
+
+
+
+        :root {
+            /* Colors */
+            --brand-color: hsl(257, 100%, 50%);
+            --black: hsl(0, 0%, 0%);
+            --white: hsl(0, 0%, 100%);
+            /* Fonts */
+            --font-title: "Montserrat", sans-serif;
+            --font-text: "Lato", sans-serif;
+        }
+
+        /* RESET */
+
+        /* Box sizing rules */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        /* Remove default margin */
+        .basin,
+        h2,
+        p {
+            margin: 0;
+        }
+
+        /* GLOBAL STYLES */
+        .basin {
+            display: flex;
+            justify-content: center;
+            height: 90vh;
+            margin: 0;
+            padding-bottom: 300px;
+            
+        }
+
+        h2 {
+            font-size: 2.25rem;
+            font-family: var(--font-title);
+            color: var(--white);
+            line-height: 1.1;
+        }
+
+        p {
+            font-family: var(--font-text);
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--white);
+        }
+
+        .flow>*+* {
+            margin-top: var(--flow-space, 1em);
+        }
+
+        /* CARD COMPONENT */
+        .card-container {
+            display: flex;
+            gap: 50px;
+            margin-top: 5%;
+        }
+
+        .card {
+            display: grid;
+            place-items: center;
+            width: 80vw;
+            max-width: 21.875rem;
+            height: 28.125rem;
+            overflow: hidden;
+            border-radius: 0.625rem;
+            box-shadow: 0.25rem 0.25rem 0.5rem rgba(221, 216, 216, 0.25);
+        }
+
+        .card>* {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        .card__background {
+            object-fit: cover;
+            max-width: 100%;
+            height: 100%;
+        }
+
+        .card__content {
+            --flow-space: 0.9375rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-self: flex-end;
+            height: 55%;
+            padding: 12% 1.25rem 1.875rem;
+            background: linear-gradient(
+                180deg,
+                hsla(0, 66%, 32%, 0) 0%,
+                hsla(0, 0%, 0%, 0.3) 10%,
+                hsl(0, 0%, 0%) 100%
+            );
+        }
+
+        .card__content--container {
+            --flow-space: 1.25rem;
+        }
+
+        .card__title {
+            position: relative;
+            width: fit-content;
+            width: -moz-fit-content;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .card__title::after {
+            content: "";
+            position: absolute;
+            height: 0.3125rem;
+            width: calc(100% + 1.25rem);
+            bottom: calc((1.25rem - 0.5rem) * -1);
+            left: -1.25rem;
+            background-color: var(--brand-color);
+        }
+
+        .card__button {
+            padding: 0.75em 1.6em;
+            width: fit-content;
+            width: -moz-fit-content;
+            font-variant: small-caps;
+            font-weight: bold;
+            border-radius: 0.45em;
+            border: none;
+            background-color: var(--brand-color);
+            font-family: var(--font-title);
+            font-size: 1.125rem;
+            color: var(--black);
+        }
+
+        .card__button:focus {
+            outline: 2px solid rgb(235, 226, 226);
+            outline-offset: -5px;
+        }
+
+        @media (any-hover: hover) and (any-pointer: fine) {
+            .card__content {
+                transform: translateY(62%);
+                transition: transform 500ms ease-out;
+                transition-delay: 500ms;
+            }
+
+            .card__title::after {
+                opacity: 0;
+                transform: scaleX(0);
+                transition: opacity 1000ms ease-in, transform 500ms ease-out;
+                transition-delay: 500ms;
+                transform-origin: right;
+            }
+
+            .card__background {
+                transition: transform 500ms ease-in;
+            }
+
+            .card__content--container>:not(.card__title),
+            .card__button {
+                opacity: 0;
+                transition: transform 500ms ease-out, opacity 500ms ease-out;
+            }
+
+            .card:hover,
+            .card:focus-within {
+                transform: scale(1.05);
+                transition: transform 500ms ease-in;
+            }
+
+            .card:hover .card__content,
+            .card:focus-within .card__content {
+                transform: translateY(0);
+                transition: transform 500ms ease-in;
+            }
+
+            .card:focus-within .card__content {
+                transition-duration: 0ms;
+            }
+
+            .card:hover .card__background,
+            .card:focus-within .card__background {
+                transform: scale(1.3);
+            }
+
+            .card:hover .card__content--container>:not(.card__title),
+            .card:hover .card__button,
+            .card:focus-within .card__content--container>:not(.card__title),
+            .card:focus-within .card__button {
+                opacity: 1;
+                transition: opacity 500ms ease-in;
+                transition-delay: 1000ms;
+            }
+
+            .card:hover .card__title::after,
+            .card:focus-within .card__title::after {
+                opacity: 1;
+                transform: scaleX(1);
+                transform-origin: left;
+                transition: opacity 500ms ease-in, transform 500ms ease-in;
+                transition-delay: 500ms;
+            }
+        }
+        .eng p{
+            font-family: cursive;
+           text-align: center;
+            color: rgb(222, 15, 184);
+            font-size: 90px;
+        }
+        @keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+.eng p{
+  animation: lights 5s 750ms linear infinite;
+}
+.PIC{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  overflow: hidden;
+}
+.scope {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: slid 40s linear infinite;
+}
+
+.scope span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+.scope span:hover img {
+  transform: translateY(-50px) scale(1.7);
+}
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}   
+
+footer {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+font-style: italic;
+background-color: rgba(0, 0, 0, 0.389);
+}
+
+
+.black-lives-matter {
+font-size: 300%;
+line-height: 8vw;
+margin: 0;
+font-family: 'Red Hat Display', sans-serif;
+font-weight: 900;
+background: url(img/nn.gif);
+background-size: 70px;
+background-position: 50% 50%;
+-webkit-background-clip: text;
+color: rgba(0,0,0,0.08);
+animation: zoomout 10s ease 500ms forwards;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 20px; /* Adjust font size for mobile */
+    margin-left: 10px; /* Adjust margin for mobile */
+  }
+
+  /* Adjust other styles as needed for mobile devices */
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 25px; /* Adjust font size for tablets */
+    margin-left: 50px; /* Adjust margin for tablets */
+  }
+
+  /* Adjust other styles as needed for tablet devices */
+}
+
+/* Desktops and larger devices */
+@media only screen and (min-width: 1024px) {
+  /* Add your desktop-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 30px; /* Default font size for desktops */
+    margin-left: 250px; /* Default margin for desktops */
+  }
+
+  /* Adjust other styles as needed for desktop devices */
+}
+}
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+    /* Add your mobile-specific styles here */
+    body {
+        /* Example styles */
+        font-size: 14px;
+    }
+
+    /* Adjust other elements as needed for mobile devices */
+}
+
+/* For tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Add your tablet-specific styles here */
+    body {
+        /* Example styles */
+        font-size: 16px;
+    }
+
+    /* Adjust other elements as needed for tablets */
+}
+
+/* For desktops */
+@media screen and (min-width: 1024px) {
+    /* Add your desktop-specific styles here */
+    body {
+        /* Example styles */
+        font-size: 18px;
+    }
+
+    /* Adjust other elements as needed for desktops */
+}
+
+/* CSS for the body */
+/* ... (existing styles) ... */
+
+/* Media query for smartphones */
+@media screen and (max-width: 767px) {
+  /* Update styles for smartphones here */
+
+  /* For example, modify the navigation links */
+  footer {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Update margin */
+  }
+
+  /* Update other styles as needed */
+  /* ... */
+}
+
+
+            
+</style>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="IT-111.html"><b>IT111-BLOGS</b></a></li>
+            <li><a href="FLEX.html"><b>FLEX</b></a></li>
+        </ul>
+     </nav>
+    </div>
+    <div class="ing">
+        <p> FLEXING MY TALENT</p>
+    </div>
+    <section class="basin">
+        <div class="card-container">
+            <!-- Card 1 -->
+            <article class="card">
+                <img class="card__background" src="img/FB_IMG_1646183165079.jpg" alt="Background" width="1920" height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">TALENT 1</h2>
+                        <p style="font-size: 13.5px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                          Keyboard talent refers to the exceptional skill and proficiency an individual possesses in playing the keyboard, showcasing a high level of dexterity, musicality, and technical ability. </p>
+                    </div>
+                    <button class="card__button">KEYBOARD</button>
+                </div>
+            </article>
+  
+            <!-- Card 2 -->
+            <article class="card">
+                <img class="card__background" src="img/290353843_344302474545160_5450708493883549115_n.jpg" alt="Background" width="1920" height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">TALENT 2</h2>
+                        <p style="font-size: 10px;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                            My journey into the world of drumming began at a tender age. I vividly remember being captivated by the mesmerizing sound of drums during a live performance. The art of drumming embodies a unique synergy between precision, creativity, and passion. As sticks collide with the drums, a symphony of beats emerges, weaving a tale of rhythm and melody. 
+                        </p>
+                    </div>
+                    <button class="card__button">DRUMMER</button>
+                </div>
+            </article>
+  
+            <!-- Card 3 -->
+            <article class="card">
+                <img class="card__background" src="img/16.jpg" alt="Background" width="1920" height="2193" />
+                <div class="card__content | flow">
+                    <div class="card__content--container | flow">
+                        <h2 class="card__title">TALENT 3</h2>
+                        <p class="card__description" style="font-size: 11px; font-family: 'Times New Roman', Times, serif;">
+                            Essential instrument in contemporary music, often overlooked but holding a crucial role in shaping the overall sound and feel of a musical piece. Its distinct low-frequency tones provide the foundation for the harmony and rhythm in various genres, from rock and pop to jazz and funk.
+                        </p>
+                    </div>
+                    <button class="card__button">BASS GUITAR</button>
+                </div>
+            </article>
+        </div>
+    </section>
+    <div class="eng">
+        <p> FLEXING MY FAMILY AND </p>
+        <p style="text-align: center;">FREINDS!!!</p>
+    </div>
+    <section class="PIC">
+        <div class="scope">
+           <span style="--i:1;"><img src="img/f6.jpg" alt="not found"> </span>
+           <span style="--i:2;"><img src="img/f1.jpg" alt="not found"></span>
+           <span style="--i:3;"><img src="img/f2.jpg" alt="not found"></span>
+           <span style="--i:4;"><img src="img/f3.jpg" alt="not found"></span>
+           <span style="--i:5;"><img src="img/f5.jpeg" alt="not found"></span>
+           <span style="--i:6;"><img src="img/f7.jpg" alt="not found"></span>
+           <span style="--i:7;"><img src="img/f8.jpg" alt="not found"></span>
+           <span style="--i:8;"><img src="img/f9.jpg" alt="not found"></span>
+          </div>
+       </section>
+</body>
+<footer>
+    <!-- Copyright information -->
+    <h1 class="black-lives-matter">&#9400; proilanadolfo2023</h1>
+</footer>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL OUTPUT</title>
+</head>
+<style>
+    /* Background styles */
+    body {
+            background-image: url(img/123.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed ;
+            background-position: center;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+          }
+        
+            /* Styles for the navigation bar */
+        .navbar {
+            
+            overflow: hidden;
+            justify-content: space-between;
+            background-color: black;
+            font-family: 'Times New Roman', Times, serif;
+        
+        }
+         /* Styles for the navigation bar list items and links */
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 17px;
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 250px;
+            font-size: 30px;
+           
+        }
+ /* Styles for hover effect on navigation links */
+        .navbar a:hover {
+            background-color: #3db8ff;
+            color: black;
+            border-radius: 500px;
+            align-items: center;
+        }
+         /* Styles for different sections with images and text */
+    /* Each section has its own class for styling */
+
+.side {
+      display: flex;
+      color: rgb(251, 255, 255);
+    }
+
+    .img-popoy {
+      width: 750px;
+      margin-top: 10%;
+      margin-left: 80px;
+      border-radius: 5%;
+    }
+    .img-popoy {
+transition: 1s ease;
+}
+
+.img-popoy:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.img-popoy:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(113, 231, 196);
+  transition-duration: 0.3s;
+}
+    .topic{
+      font-size: 30px;
+      margin-left: 80px;
+      margin-top: 12%;
+      margin-right: 100px;   
+    }
+    .topic {
+transition: 4s ease;
+}
+
+.topic:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 4s ease;
+}
+.topic:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(45, 3, 254);
+  transition-duration: 0.3s;
+}
+    .side1 {
+      display: flex;
+      color: rgb(251, 255, 255);
+    }
+    .topic1{
+      font-size: 22px;
+      margin-top: 5%;
+      margin-left: 80px;
+      margin-right: 100px;
+    }
+    .topic1 {
+transition: 4s ease;
+}
+
+.topic1:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 4s ease;
+}
+.topic1:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(45, 3, 254);
+  transition-duration: 0.3s;
+}
+    .img-popoy1 {
+      width: 750px;
+      margin-top: 50px;
+      margin-right: 80px;
+      border-radius: 5%;
+    }
+    .img-popoy1 {
+transition: 1s ease;
+}
+ /* Hover effect for images */
+
+.img-popoy1:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.img-popoy1:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(113, 231, 196);
+  transition-duration: 0.3s;
+}.side12 {
+      display: flex;
+      color: rgb(251, 255, 255);
+    }
+
+    .img-popoy12 {
+      width: 750px;
+      margin-top: 50px;
+      margin-left: 80px;
+      border-radius: 5%;
+    }
+    .img-popoy12 {
+transition: 1s ease;
+}
+
+.img-popoy12:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.img-popoy12:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(113, 231, 196);
+  transition-duration: 0.3s;
+}
+    .topic12{
+      font-size: 30px;
+      margin-left: 80px;
+      margin-top: 5%;
+      margin-right: 100px;
+    }
+      .topic12 {
+transition: 4s ease;
+}
+
+.topic12:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 4s ease;
+}
+.topic12:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(45, 3, 254);
+  transition-duration: 0.3s;
+}
+  .side13 {
+      display: flex;
+      color: rgb(251, 255, 255);
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .topic13{
+      font-size: 22px;
+      margin-top: 5%;
+      margin-left: 80px;
+      margin-right: 100px;
+    }
+    .topic13 {
+transition: 4s ease;
+}
+
+.topic13:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 4s ease;
+}
+.topic13:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(45, 3, 254);
+  transition-duration: 0.3s;
+}
+.img-popoy13 {
+      width: 750px;
+      margin-top: 50px;
+      margin-right: 80px;
+      border-radius: 5%;
+    }
+    .img-popoy13 {
+transition: 1s ease;
+}
+
+.img-popoy13:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.img-popoy13:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(113, 231, 196);
+  transition-duration: 0.3s;
+}
+.side14 {
+      display: flex;
+      color: rgb(251, 255, 255);
+    }
+
+    .img-popoy14 {
+      width: 750px;
+      margin-top: 50px;
+      margin-left: 80px;
+      border-radius: 5%;
+    }
+    .img-popoy14 {
+transition: 1s ease;
+}
+
+.img-popoy14:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
+.img-popoy14:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(113, 231, 196);
+  transition-duration: 0.3s;
+}
+    .topic14{
+      font-size: 22px;
+      margin-left: 80px;
+      margin-top: 5%;
+      margin-right: 100px;
+    }
+    .topic14 {
+transition: 4s ease;
+}
+
+.topic14:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 4s ease;
+}
+.topic14:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(45, 3, 254);
+  transition-duration: 0.3s;
+}
+.last {
+            text-align: center;
+            margin-top: 10%; /* Move the last section downwards by 50px */
+        }
+
+        .last h3 {
+            margin-bottom: 10px;
+        }
+
+        .last img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 700px;
+            height: 600px;
+            margin-bottom: 2%;
+        }
+        .last img {
+transition: 4s ease;
+}
+
+.last img:hover{
+-webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 2s ease;
+}
+.last img:hover {
+  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  box-shadow: 0 0 10px 5px rgb(162, 139, 255);
+  transition-duration: 2.3s;
+}
+
+        .last h3 {
+            font-size: 50px;
+            color: #3db8ff;
+        }
+
+        .most{
+          color: #e5eef3;
+          font-size:30px;
+          margin-left: 70px;
+          margin-right: 70px;
+        }
+        footer {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+align-content: center;
+flex-wrap: wrap;
+  text-decoration: none;
+  font-size: 18px;
+  overflow: hidden;
+font-style: italic;
+background-color: rgba(0, 0, 0, 0.389);
+}
+
+
+.black-lives-matter {
+font-size: 300%;
+line-height: 8vw;
+margin: 0;
+font-family: 'Red Hat Display', sans-serif;
+font-weight: 900;
+background: url(img/nn.gif);
+background-size: 70px;
+background-position: 50% 50%;
+-webkit-background-clip: text;
+color: rgba(0,0,0,0.08);
+animation: zoomout 10s ease 500ms forwards;
+}
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 20px; /* Adjust font size for mobile */
+    margin-left: 10px; /* Adjust margin for mobile */
+  }
+
+  /* Adjust other styles as needed for mobile devices */
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 25px; /* Adjust font size for tablets */
+    margin-left: 50px; /* Adjust margin for tablets */
+  }
+
+  /* Adjust other styles as needed for tablet devices */
+}
+
+/* Desktops and larger devices */
+@media only screen and (min-width: 1024px) {
+  /* Add your desktop-specific styles here */
+  /* For example: */
+  .navbar a {
+    font-size: 30px; /* Default font size for desktops */
+    margin-left: 250px; /* Default margin for desktops */
+  }
+
+  /* Adjust other styles as needed for desktop devices */
+}
+
+/* CSS for the body */
+/* ... (existing styles) ... */
+
+/* Media query for smartphones */
+@media screen and (max-width: 767px) {
+  /* Update styles for smartphones here */
+
+  /* For example, modify the navigation links */
+  footer {
+    font-size: 10px; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Update margin */
+  }
+
+  /* Update other styles as needed */
+  /* ... */
+}
+
+
+
+</style>
+<body>
+  <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><b>HOME</b></a></li>
+            <li><a href="IT-111.html"><b>IT111-BLOGS</b></a></li>
+            <li><a href="FLEX.html"><b>FLEX</b></a></li>
+        </ul>
+     </nav>
+     <div class="side">
+      <img class="img-popoy" src="img/5.png">
+      <p class="topic"> This Lesson I learned about TECH TIMELINERESEARCH like Pascaline also called Arithmetic Machine, the first calculator or addition machine to be produced in any quantity and actual used. Pascaline design and built by the French mathematician Blaise Pascal on 1642 and 1644. It could only do addition and subtraction.</p>
+    </div>
+    <div class="side1">
+      <p class="topic1"> Part of modern life, and new applications are introduced
+        every day. The use of computer technologies is also a common place in all types of organizations,
+        in academia, research, industry, government, private and business organizations. NETWORK ENGINEER- Plans for the installation or expansion of local or wide-area computer networks. Performs complex configuration of servers, hubs, routers, and other network conmunications equipment. Writes scripts or programs to automate network operations. </p>
+        <img class="img-popoy1" src="img/6.png">
+    </div>
+    <div class="side12">
+      <img class="img-popoy12" src="img/4.png">
+      <p class="topic12"> CHAPTER III: This lesson I learned the FOUR PHASES OF THE CYCLE TO PROCESS INFORMATION. INPUT- Computer receives data and instructions. Process- Computer applies instructions to data to produce information (organized Data). Storage- Saving the information for a subsequent use or use in future. Output- Computer sends information to people in a usable format. </p>
+    </div>
+    <div class="side13">
+      <p class="topic13"> This lesson I learned the 4 Components of a Computer system. Hardware- Hardware refers to the physical component that makes up a computer system and can be classified into as. SOFTWARE- Is a collection of electronic instructions that programmers write using a programming language and that a computer’s CPU can interpret to carry out a specific task. SOFTWARE- System software refers to the files and programs that make up your computer's operating system. System files include libraries of functions, system services, drivers for printers and other hardware, system preferences, and other configuration files. DATA WARE- generally refers to software and systems used for data management, such as databases, data warehouses, data analytics tools, and related software applications. These tools are used to store, organize, manipulate, and analyze data. </p>
+        <img class="img-popoy13" src="img/3.png">
+    </div>
+    <div class="side14">
+      <img  class="img-popoy14" src="img/2.png">
+      <p class="topic14"> This lesson I learned any types of cybercrimes and cybercriminal. IDENTITY THEFT- Done by a perpetrator to commit fraud for financial gains through fake credentials and by purporting to be someone else. MALICIOUS SOFTWARE- or malware, is like a digital virus. Its software designed to harm your computer, steal your data, or cause trouble without your consent. i.e., computer virus. THEFT- Another common cybercrime which some internet users are not even aware of is piracy. I.e., Illegal downloading. CYBER BULLYING AND STALKING- s when someone uses the internet or digital devices to harm, unwanted online attention that may include threats.</p>
+    </div>
+
+         <!-- Additional content (last section) -->
+         <div class="last" style="text-align: center;">
+          <h3 style="margin-bottom: 10px;"> "LESSON THAT I CHALLENGED THE MOST" </h3>
+          <img src="img/IMG_20231128_133240.jpg" alt="SS1 & SS2 Image"
+              style="display: block; margin: 0 auto; max-width: 100%; width: 70%; height: 600px; margin-bottom: 2%;">
+          <p class="most" style="margin-bottom: 13%;">Learning HTML and CSS has become my favorite topic because it empowers me
+              to tackle procrastination, especially regarding our final project the personal website One of the aspects I found particularly challenging was the transition from theoretical understanding to practical application. While I could comprehend the theory behind HTML and CSS, implementing them to create functional and visually appealing web pages was initially overwhelming.. </p>
+      </div>
+      
+    
+
+
+   
+    
+</body>
+<footer>
+  <!-- Copyright information -->
+  <h1 class="black-lives-matter">&#9400; proilanadolfo2023</h1>
+</footer>
+</html>
